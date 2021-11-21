@@ -83,7 +83,7 @@ const App = () => {
       setNumMinted(num);
     };
     void fetchNumNFTsMinted();
-  }, [])
+  }, [currentAccount])
 
   useEffect(() => {
     checkIfWalletIsConnected();
