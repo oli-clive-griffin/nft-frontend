@@ -7,8 +7,6 @@ import miningGif from "./assets/mining.gif"
 const TWITTER_HANDLE = 'oli_c_g';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
-var parser = new DOMParser();
-
 const App = () => {
   const [mining, setMining] = useState(false);
 
@@ -73,7 +71,6 @@ const App = () => {
     }
   }
 
-  // Render Methods
   const renderNotConnectedContainer = () => (
     <button onClick={connectWallet} className="cta-button connect-wallet-button">
       Connect to Wallet
